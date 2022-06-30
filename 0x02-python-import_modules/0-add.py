@@ -3,4 +3,4 @@ import add_0
 a = 1
 b = 2
 c = add_0.add(a, b)
-print('{:d} + {:d} = {:d}'.format(a, b, c))
+print("%d + %d = %d" % (a, b, c))
