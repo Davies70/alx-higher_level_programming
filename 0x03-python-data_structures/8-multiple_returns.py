@@ -2,7 +2,7 @@
 def multiple_returns(sentence):
     if isinstance(sentence, str):
         length = len(sentence)
-        if length == 0:
+        if sentence == "":
             first == None
         else:
             first = sentence[0]
