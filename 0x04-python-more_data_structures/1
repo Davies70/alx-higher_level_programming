@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+def uniq_add(my_list=[]):
+    hard_list = []
+    length = len(my_list)
+    for i in (my_list):
+        hard_list.append(i)
+    print("hard is " hard_list)
