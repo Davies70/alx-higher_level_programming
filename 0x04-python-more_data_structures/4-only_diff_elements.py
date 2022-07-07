@@ -9,4 +9,3 @@ def only_diff_elements(set_1, set_2):
         if j not in shared:
             new_set.add(j)
     return new_set
-
