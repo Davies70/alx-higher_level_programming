@@ -4,6 +4,7 @@ def common_elements(set_1, set_2):
     for i in (set_1):
         if i in (set_2):
             result.add(i)
-            if len(result) == 0:
-                return set()
-    return result 
+    if len(result) == 0:
+        return set()
+    else:
+        return result 
