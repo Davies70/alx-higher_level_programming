@@ -9,4 +9,3 @@ def safe_print_division(a, b):
         result = None
     finally:
         return result
-
