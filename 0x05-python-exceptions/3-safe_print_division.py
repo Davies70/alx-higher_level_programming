@@ -5,5 +5,5 @@ def safe_print_division(a, b):
         print("Inside result: {}".format(result))
         return result
     except ArithmeticError:
-        print("Inside resut: {}".format(None))
+        print("Inside result: {}".format(None))
         return None
