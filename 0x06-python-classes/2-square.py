@@ -11,5 +11,7 @@ class Square:
         """ if statements to test private variable """
         if isinstance(self.__size, int) == False:
             raise TypeError("size must be an integer")
+
+        """ another statement """
         elif self.__size < 0:
             raise ValueError ("size must be >= 0")
