@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ create a class Square """
+
+
+
 class Square:
-
-
     """ initialize instance variable """
     def __init__(self, size=0):
         """ instanstialize the variable size """
