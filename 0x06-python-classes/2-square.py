@@ -3,8 +3,12 @@
 
 
 class Square:
+    """ instance variale size initialized """
+
     def __init__(self, size=0):
         self.__size = size
+
+        """ if statements to test private variable """
         if isinstance(self.__size, int) == False:
             raise TypeError("size must be an integer")
         elif self.__size < 0:
