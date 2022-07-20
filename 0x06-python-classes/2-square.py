@@ -6,6 +6,7 @@ class Square:
     """ Square class created """
 
     def __init__(self, size=0):
+        """ square initialized with arg size, self """
         self.__size = size
         if isinstance(self.__size, int) == False:
             raise TypeError("size must be an integer")
