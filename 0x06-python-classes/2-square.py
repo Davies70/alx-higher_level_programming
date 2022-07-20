@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module doc """
+""" Class Square defined """
 
 
 class Square:
@@ -10,7 +10,7 @@ class Square:
         Args:
              size (int): size of square
         """
-        if isinstance(size, int) == False:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError ("size must be >= 0")
