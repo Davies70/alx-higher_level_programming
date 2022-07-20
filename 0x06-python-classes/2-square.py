@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" Class Square defined """
+"""Class Square defined."""
 
 
 class Square:
-    """ Square class created """
+    """Square class created."""
 
     def __init__(self, size=0):
-        """ Square initialized with
+        """ Square initialized.
         Args:
-             size (int): size of square
+             size (int): size of square.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
