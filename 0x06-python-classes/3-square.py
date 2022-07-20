@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Area of the square."""
 
+
 class Square:
     """Creating the class."""
 
