@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-""" create a class Square """
+""" module doc """
 
 
 class Square:
-    """ instance variale size initialized """
-
+    """ Square class created """
     def __init__(self, size=0):
         self.__size = size
-
-        """ if statements to test private variable """
         if isinstance(self.__size, int) == False:
             raise TypeError("size must be an integer")
-
-        """ another statement """
         elif self.__size < 0:
             raise ValueError ("size must be >= 0")
