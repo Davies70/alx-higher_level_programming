@@ -4,6 +4,7 @@
 
 class Square:
     """ Square class created """
+
     def __init__(self, size=0):
         self.__size = size
         if isinstance(self.__size, int) == False:
