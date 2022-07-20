@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" module doc """
+""" Module doc """
 
 
 class Square:
     """ Square class created """
 
     def __init__(self, size=0):
-        """ square initialized with
+        """ Square initialized with
         Args:
              size (int): size of square
         """
