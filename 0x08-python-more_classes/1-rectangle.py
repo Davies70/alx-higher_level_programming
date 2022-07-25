@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module created """
+""" modul for Rectangle created """
 
 
 class Rectangle:
