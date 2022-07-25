@@ -4,8 +4,10 @@
 
 class Rectangle:
     """ class created """
+
     def __init__(self, width=0, height=0):
         """ init method """
+
         self.__width = width
         self.__height = height
 
@@ -45,6 +47,6 @@ class Rectangle:
 
     def __str__(self):
         """ string printer """
-        if self.__width == 0 and self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         return ((("#" * self.width) + "\n") * self.height)[:-1]
