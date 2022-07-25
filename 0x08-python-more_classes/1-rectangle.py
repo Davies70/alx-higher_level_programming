@@ -3,11 +3,11 @@
 
 
 class Rectangle:
-    
+
     """ innit method created with arg width, height """
 
     def __init__(self, width=0, height=0):
-        
+
         """ innit method for instance """
 
         self.__width = width
