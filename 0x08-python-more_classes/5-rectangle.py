@@ -54,7 +54,6 @@ class Rectangle:
     def __repr__(self):
         """ repr string """
         return 'Rectangle(' + str(self.width) + ', ' + str(self.height) + ')'
-    
 
     def __del__(self):
         """destructor """
