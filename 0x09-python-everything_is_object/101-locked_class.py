@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""module of LockedClass"""
+""" Defining a class """
 
 
 class LockedClass:
-    """ class that prevents dynamica
-        instance allocation
     """
-    __slot__ = ['first_name']
+    This class prevents user from dynamic attributes
+    """
+    __slots__ = ['first_name']
