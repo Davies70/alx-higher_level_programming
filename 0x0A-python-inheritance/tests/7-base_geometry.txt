@@ -84,8 +84,7 @@ Test for comma:
 
 Test for boolean:
      >>> bg.integer_validator("boolean", True)
-     Traceback (most recent call last):
-     TypeError: boolean must be an integer
+
 
 Test for list:
      >>> bg.integer_validator("listy", {3, 4})
