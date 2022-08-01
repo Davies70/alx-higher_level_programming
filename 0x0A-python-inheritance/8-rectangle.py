@@ -1,17 +1,18 @@
 #!/usr/bin/python3
+
 """
-Contains the class BaseGemetry
+A module for BaseGeometry class.
 """
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """ The class empty"""
+    """A rectangle class."""
 
     def __init__(self, width, height):
-        """raises an exception when called"""
-        self.integer_validator("width", width)
+        """Initialize the rectangle class."""
         self.__width = width
+        self.__height = height
+        self.integer_validator("width", width)
         self.integer_validator("height", height)
-        self.heigth = height
