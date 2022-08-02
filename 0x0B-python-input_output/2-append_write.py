@@ -8,4 +8,4 @@ def append_write(filename="", text=""):
         file1.write(text)
     with open(filename, 'r', encoding="utf-8") as file2:
         data = file2.read()
-    return len(data)
+    return len(text)
