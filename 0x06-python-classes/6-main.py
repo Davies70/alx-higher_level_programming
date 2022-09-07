@@ -15,3 +15,28 @@ my_square_3 = Square(3, (3, 0))
 my_square_3.my_print()
 
 print("--")
+
+my_square_3 = Square(3, (3, 2))
+my_square_3.my_print()
+
+print("--")
+
+my_square_3 = Square(5, (10, 2))
+my_square_3.my_print()
+
+print("--")
+
+my_square_3 = Square(5, (10, 0))
+my_square_3.my_print()
+
+print("--")
+
+my_square_3 = Square(5, (10, 1))
+my_square_3.my_print()
+
+print("--")
+
+my_square_3 = Square(5, (10, 10))
+my_square_3.my_print()
+
+print("--")
