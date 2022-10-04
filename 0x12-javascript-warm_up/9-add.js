@@ -4,5 +4,8 @@
 
 const arg = process.argv;
 
-add = (a, b) => console.log(Number(arg[2]) + Number(arg[3]));
+function add (a, b) {
+  console.log(Number(arg[2]) + Number(arg[3]));
+}
+
 add();
