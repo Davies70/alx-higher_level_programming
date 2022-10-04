@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-/* converts to integer*/
+/* converts to integer */
 
 const args = process.argv;
 
