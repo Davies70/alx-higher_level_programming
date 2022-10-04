@@ -2,7 +2,7 @@
 
 /* print a loop */
 
-const array = ['C is fun', 'Python is cool', 'JavasScript is amazing'];
+const array = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 let i;
 
