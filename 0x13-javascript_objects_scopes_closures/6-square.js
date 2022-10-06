@@ -1,26 +1,10 @@
 #!/usr/bin/node
-
-/* Square Class */
-
-const S1 = require('./5-square.js');
-
-class Square extends S1 {
-  constructor (size) {
-    super(size);
-    this.length = size;
-  }
-
+module.exports = class Square extends require('./5-square.js') {
   charPrint (c) {
-    if (c !== undefined) {
-      for (let i = 0; i < this.length; i++) {
-        for (let j = 0; j < this.length; j++) {
-          process.stdout.write(String(c));
-        }
-        process.stdout.write('\n');
-      }
+    if (c === undefined) {
+      this.print();
     } else {
-      super.print();
+      for (let i = 0; i < this.height; i++) console.log(c.repeat(this.width));
     }
   }
-}
-module.exports = Square;
+};
