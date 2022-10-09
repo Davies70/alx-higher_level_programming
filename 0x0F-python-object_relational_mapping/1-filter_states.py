@@ -14,5 +14,5 @@ if __name__ == "__main__":
                               user=sys.argv[1], passwd=sys.argv[2],
                               db=sys.argv[3], charset="utf8")
     cur = connect.cursor()
-    cur.execute("SELECT * FROM `states` WHERE name LIKE 'N%' ORDER BY id ASC")
-    [print(rows) for rows in cur.fetchall()]
+    cur.execute("SELECT * FROM `states` ORDER BY id ASC")
+    [print(rows) for rows in cur.fetchall() if rows[1][0] == 'N']
