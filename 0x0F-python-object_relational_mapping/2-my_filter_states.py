@@ -14,4 +14,4 @@ if __name__ == "__main__":
     cur = connect.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE '{:s}' ORDER BY \
     id ASC".format(sys.argv[4]))
-    [print(state) for state in cur.fetchall()]
+    [print(state) for state in cur.fetchall() if state == sys.argv[4]]
