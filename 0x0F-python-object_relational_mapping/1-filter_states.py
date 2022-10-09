@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
-"""Write a script that lists all states with a name
-starting with N (upper N) from the database hbtn_0e_0_usa
-Usage: script should take 3 arguments:
-mysql username, mysql password and database name
-(no argument validation needed)
 """
+Lists all states with a name starting with N from the database hbtn_0e_0_usa.
+Usage: ./1-filter_states.py <mysql username> \
+                             <mysql password> \
+                             <database name>
+"""
+
 import MySQLdb
 import sys
 
