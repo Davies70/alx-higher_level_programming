@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Filter states containing a letter from the database
+Filter by state passed by an argument
 
 """
 import sys
@@ -17,7 +17,10 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    [print("{}: {}".format(state.id, state.name))
-     for state in
-     session.query(State).order_by(State.id).filter(State.name.like('%a%'))]
+    state = session.query(State).filter(State.name == '{:s}'
+                                        .format(sys.argv[4]))
+    if not state:
+        print('Nothin')
+    [print(state.id) for state in session.query(State).
+     filter(State.name == '{:s}'.format(sys.argv[4]))]
     session.close()
