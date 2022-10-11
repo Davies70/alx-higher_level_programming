@@ -17,10 +17,11 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).filter(State.name == '{:s}'
-                                        .format(sys.argv[4]))
-    if not state:
+    found = False
+    state = session.query(State).filter(State.name ==
+                                        '{:s}'.format(sys.argv[4]))
+    for row in state:
+        print(row.id)
+        found = True
+    if found is False:
         print('Not found')
-    [print(state.id) for state in session.query(State).
-     filter(State.name == '{:s}'.format(sys.argv[4]))]
-    session.close()
