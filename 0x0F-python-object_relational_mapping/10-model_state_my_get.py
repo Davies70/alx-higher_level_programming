@@ -20,7 +20,7 @@ if __name__ == "__main__":
     state = session.query(State).filter(State.name == '{:s}'
                                         .format(sys.argv[4]))
     if not state:
-        print('Nothing')
+        print('Not found')
     [print(state.id) for state in session.query(State).
      filter(State.name == '{:s}'.format(sys.argv[4]))]
     session.close()
