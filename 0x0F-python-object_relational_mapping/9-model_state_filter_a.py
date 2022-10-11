@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-fetch first State from the database
+Filter State objects from the database
 
 """
 import sys
@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).first()
-    if not state:
-        print('Nothing')
-    print("{}: {}".format(state.id, state.name))
+    [print("{}: {}".format(state.id, state.name))
+     for state in
+     session.query(State).order_by(State.id).filter(State.name.like('%a%'))]
+    session.close()
