@@ -3,5 +3,4 @@
 #and displays the size of the body of the response. The size must be displayed in bytes
 #You have to use curl
 
-curl -w size_download $1
-
+curl -sI $1 | grep Content-Length | grep -oE '[0-9]*'
