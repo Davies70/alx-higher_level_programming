@@ -8,9 +8,12 @@ Your algorithm must have the lowest complexity \
 6-peak.py must contain the function
 6-peak.txt must contain the complexity of your algorithm:\
         O(log(n)), O(n), O(nlog(n)) or O(n2)
-Note: there may be more than one peak in the list 
+Note: there may be more than one peak in the list
 """
+
+
 def find_peak(list_of_integers):
+    """ find the peak of an integer """
     nums = list_of_integers
     if not nums:
         return None
