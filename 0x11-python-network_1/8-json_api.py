@@ -14,7 +14,7 @@ if __name__ == '__main__':
         dic['q'] = sys.argv[1]
     r = requests.post('http://0.0.0.0:5000/search_user', data=dic)
     try:
-        data = r.json()
+        r.json()
     except JSONDecodeError:
         print('Not a valid JSON')
         exit()
