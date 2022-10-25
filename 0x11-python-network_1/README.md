@@ -11,7 +11,7 @@
 > - How to manipulate data from an external service
 
 ### Resources
-> - [Named Link](https://docs.python.org/3/howto/urllib2.html "HOWTO Fetch Internet Resources Using urllib Package")
-> - [Named Link](https://requests.readthedocs.io/en/latest/ "Quickstart with Requests package")
-> - [Named Link](https://pypi.org/project/requests/ "Requests package")
+> - [HOWTO Fetch Internet Resources Using urllib Package](https://docs.python.org/3/howto/urllib2.html)
+> - [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
+> - [Requests package](https://pypi.org/project/requests/)
 
