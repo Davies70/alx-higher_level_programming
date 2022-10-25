@@ -8,8 +8,8 @@ Print all commits by: `<sha>: <author name>` (one by line)"""
 import sys
 import requests
 if __name__ == '__main__':
-    o = sys.argv[1]
-    r = sys.argv[2]
+    r = sys.argv[1]
+    o = sys.argv[2]
 
     headers = {'accept': 'application/vnd.github+json', 'owner': o, 'repo': r}
     url = 'https://api.github.com/repos/' + o + '/' + r + '/commits'
